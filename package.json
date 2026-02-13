@@ -1,5 +1,4 @@
 {
-  "homepage": "https://github.com/0kisiddhi/React-portfolio.git",
   "name": "portfolio",
   "private": true,
   "version": "0.0.0",
@@ -7,13 +6,10 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
     "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
-    "gh-pages": "^6.3.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-router-dom": "^7.9.5"
