@@ -1,0 +1,58 @@
+.herosection {
+  display: flex;
+  min-height: fit-content;
+  flex-wrap: nowrap;
+  padding-top: 40px;
+  padding-bottom: 50px;
+  height: 25rem;
+}
+.herosection > div:first-child {
+  background-color: rgb(170, 221, 235);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px; /* imp to adjust size bewtween both img and name box*/
+}
+/*this section is very very important we learn new thing flex-grow will indicate 1st number which is 0,flex-shrink is 2nd number which is also 0,last is flex basis it means 
+when we put 35% it means  left panel will take 35% place of main panel which i sbackground and in next 
+flex:1 means right panel will use remaing part of the main panel */
+.herosection > div:last-child {
+  flex: 0 0 35%;
+  flex: 1;
+}
+.herosection h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+  text-transform: uppercase;
+  color: #333;
+  height: 100%;
+}
+.herosection button {
+  cursor: pointer;
+  border: 2px solid rgb(59, 160, 197);
+  background-color: rgb(170, 221, 235);
+  color: rgb(6, 97, 133);
+  padding: 10px;
+  transition: 0.5s ease;
+}
+.herosection button:hover {
+  background-color: rgb(156, 195, 219);
+  transform: scale(1.2);
+}
+
+.img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center middle;
+}
+@media (max-width: 768px) {
+  .herosection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 20px;
+  }
+}

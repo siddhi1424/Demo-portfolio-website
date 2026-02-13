@@ -1,0 +1,41 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  position: sticky;
+  background-color: #b5def3;
+  z-index: 1000;
+}
+.navLinks {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+  color: rgb(30, 176, 199);
+  cursor: pointer;
+}
+.hover {
+  transition: all 0.3s ease;
+}
+.hover:hover {
+  transform: scale(1.2);
+  color: rgb(14, 91, 116);
+}
+
+.title {
+  color: rgb(255, 255, 255);
+  /* background-color: rgb(183, 243, 253); */
+  width: 10rem;
+  height: 3rem;
+  margin-top: 10px;
+  padding: 5px;
+  font-size: 20px;
+}
+@media (max-width: 600px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

@@ -1,0 +1,48 @@
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  margin: 30px auto;
+  padding: 20px 0;
+}
+.cards {
+  flex: 1 1 45%;
+  width: auto;
+  background-color: rgb(181, 226, 238);
+  padding: 10px 5px;
+}
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100%;
+}
+.cardContent p {
+  font-size: 1rem;
+  flex-grow: 1; /* imp to align lines in same line looks in smae lines*/
+}
+.cardContent button {
+  align-self: center; /*This is a powerful Flexbox property that overrides the default alignment set by the parent's (.cardContent) align-items: flex-start*/
+  margin-top: auto;
+
+  cursor: pointer;
+  border: 2px solid rgb(59, 160, 197);
+  background-color: rgb(170, 221, 235);
+  color: rgb(6, 97, 133);
+  padding: 5px 5px;
+  transition: 0.5s ease;
+}
+.cardContent button:hover {
+  background-color: rgb(156, 195, 219);
+  transform: scale(1.2);
+}
+@media (min-width: 1024px) {
+  .cardContainer {
+    flex-direction: row;
+  }
+  .card {
+    flex: 0 0 450px;
+    width: auto;
+  }
+}
